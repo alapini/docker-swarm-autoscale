@@ -12,7 +12,7 @@ If you are not familiar with Docker Swarm, please
 
 ## Keypoints
 
-+ An automated way to add new slave nodes to the Swarm cluster. Autoscale criteria implemented in the feature are CPU share and memory usage. 
++ An automated way to add new slave nodes to a Swarm cluster. Autoscale criteria implemented in the feature are CPU share and memory usage. 
 
 + Easy to deploy - Uses [Azure Resource Manager](https://azure.microsoft.com/en-us/documentation/articles/resource-group-authoring-templates/) template to setup a Swarm cluster and to start an autoscale.
 
@@ -20,7 +20,7 @@ If you are not familiar with Docker Swarm, please
 
 + This service runs as a container inside the Swarm master node and uses a Docker image to run the autoscale code inside a container. Image name: [garima0079/swarmautoscale:v5](https://hub.docker.com/r/garima0079/swarmautoscale/tags/).
 
-+ Includes Swarm fix - Uses a customized code fix image instead of docker swarm image. Image name: [garima0079/swarm](https://hub.docker.com/r/garima0079/swarm/).
++ Includes Swarm fix - Uses a customized code fix image instead of native swarm image. Image: [garima0079/swarm](https://hub.docker.com/r/garima0079/swarm/).
 
 + Swarm master uses [Swarm discovery service](https://docs.docker.com/v1.5/swarm/discovery/) to identify the slave nodes in the cluster.
 
@@ -30,5 +30,6 @@ If you are not familiar with Docker Swarm, please
 ## TO DO
 
 + Scaling down feature.
++ SSH public key.
 
  
