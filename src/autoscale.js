@@ -10,8 +10,6 @@ var templateOperations = require('./templateOperations'),
 
 
 process.env.FILE_DIRECTORY = path.join('.', 'files');
-var tableName = 'diagnosticsTable';
-
 
 /*
  * Autoscale agent class - Includes function for the monitoring the CPU usage of the cluster and for scaling up action
